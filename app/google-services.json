@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "290997553588",
+    "firebase_url": "https://rcodegeneratorlocator-4d805.firebaseio.com",
+    "project_id": "rcodegeneratorlocator-4d805",
+    "storage_bucket": "rcodegeneratorlocator-4d805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290997553588:android:3f1e8d7bba609d52",
+        "android_client_info": {
+          "package_name": "shaunhossain.com.rcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290997553588-3ua0vj85os3853gfokcl74snha0ndof5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shaunhossain.com.rcode",
+            "certificate_hash": "0a310b7fda8c834e06b5af82e0c00345aa03234f"
+          }
+        },
+        {
+          "client_id": "290997553588-13gonisnae2bqhd9b56q8shbf17bb434.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_TuKWUSqgszR15IU7BTqJSMNg9IFlyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290997553588-13gonisnae2bqhd9b56q8shbf17bb434.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

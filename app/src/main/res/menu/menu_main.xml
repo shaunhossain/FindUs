@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivityGenerator">
+
+    <!--<item-->
+        <!--android:id="@+id/save"-->
+        <!--android:icon="@mipmap/ic_save_white_48dp"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="Save" />-->
+    <item
+        android:id="@+id/save"
+        app:showAsAction="always"
+        android:title="SAVE\nRCODE" />
+    <item
+        android:id="@+id/generate_address"
+        app:showAsAction="always"
+        android:title="GENERATE\n NEW RCODE" />
+
+</menu>

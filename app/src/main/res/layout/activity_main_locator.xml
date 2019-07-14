@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="shaunhossain.com.rcode.MainActivityLocator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30">
+
+            <TextView
+                android:id="@+id/simpleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="ENTER RCODE:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/code"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleText"
+                android:layout_centerHorizontal="true"
+                android:minEms="9"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:background="@drawable/code_border"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/show_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="2dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="8dp"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#3F51B5"
+                    fancy:fb_focusColor="#3f8cb5"
+                    fancy:fb_fontIconResource="&#xf06e;"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="12dp"
+                    fancy:fb_text=" Show \nLocation"
+                    fancy:fb_textFont="fonts/Roboto-Black.ttf"
+                    fancy:fb_textColor="#FFFFFF" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/navigate_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="2dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="8dp"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#3F51B5"
+                    fancy:fb_focusColor="#3f8cb5"
+                    fancy:fb_fontIconResource="&#xf1b9;"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="12dp"
+                    fancy:fb_text="Navigate \nLocation"
+                    fancy:fb_textFont="fonts/Roboto-Black.ttf"
+                    fancy:fb_textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:background="#3F51B5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.70">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                tools:context="aris.kots.rcodegeneratorlocator.MapsActivity" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

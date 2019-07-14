@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="3dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        card_view:cardBackgroundColor="#424242"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            >
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/delete_card"
+                android:layout_height="@dimen/delete_card"
+                android:background="@mipmap/ic_delete_white_48dp"/>
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_marginRight="5dp"
+                android:layout_width="@dimen/delete_card"
+                android:layout_height="@dimen/delete_card"
+                android:layout_toLeftOf="@id/deleteButton"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_share_white_48dp"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/shareButton"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_code"
+                android:layout_alignParentTop="true"
+                android:text="code"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_address"
+                android:text="address"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/card_code"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

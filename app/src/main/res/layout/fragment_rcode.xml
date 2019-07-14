@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RcodeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/font"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="173dp"
+            android:background="@drawable/roundedbutton"
+            app:floating_background_color="@color/white"
+            app:floating_left_icon="@drawable/compass"
+            app:floating_title="RCode Generator"
+            app:floating_title_color="@android:color/black"
+            android:textSize="50dp"/>
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/roundedbutton"
+            app:floating_background_color="@color/white"
+            app:floating_left_icon="@drawable/locator"
+            app:floating_title="RCode   Locator"
+            app:floating_title_color="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:text="Generate a unique location Rcode \n for yourself, Friends and Family" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="Enter Text to locate on map \n or to navigate to location" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
